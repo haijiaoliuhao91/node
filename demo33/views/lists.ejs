@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>商品列表</title>
+    <link rel="stylesheet" href="css/base.css">
+</head>
+
+<body>
+    <h2>这是一个商品里列表</h2>
+    <%- include('./header.ejs') %>
+    <h2><%= title %></h2>
+    <ul>
+        <% for(let i = 0;i < lists.length; i++) { %>
+        <li><%= lists[i].title %></li>
+        <% } %>
+    </ul>
+    <h2>用户信息</h2>
+    <ul>
+        <li><%= userinfo.name %></li>
+        <li><%= userinfo.age %></li>
+        <li><%= userinfo.sex %></li>
+    </ul>
+    <%- include('./footer.ejs') %>
+</body>
+
+</html>

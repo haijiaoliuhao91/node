@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+</head>
+<body>
+    <h2>这是一个登录页面</h2>
+    <% if (msg) {%>
+        <h3><%= msg %></h3>
+    <% } %>
+
+    <% if (lists) { %>
+        <ul>
+            <% for (let i = 0; i < lists.length; i++) { %>
+                <li><%=lists[i].title%></li>
+            <% } %>
+        </ul>
+    <% } %>
+</body>
+</html>

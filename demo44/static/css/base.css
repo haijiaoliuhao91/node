@@ -1,0 +1,40 @@
+a {
+    text-decoration: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    caption-side: top;
+    text-align: center;
+}
+
+table caption {
+    color: red;
+    font-size: 18px;
+    height: 40px;
+    line-height: 40px;
+}
+
+table tr th {
+    color: red;
+    font-size: 17px;
+}
+
+table tr td {
+    color: cadetblue;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+a:visited {
+    color: cadetblue;
+}
+
+a:link {
+    color: cadetblue;
+}
+
+input {
+    outline: none; 
+}

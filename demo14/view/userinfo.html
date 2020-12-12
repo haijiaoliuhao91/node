@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户信息</title>
+    <link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+    <%- include('header.html') %>
+    <h2>模板引擎</h2>
+    <h3>绑定数据</h3>
+    <p><%= userinfo.name %></p>
+    <p><%= userinfo.age %>></p>
+    <p><%= userinfo.sex %></p>
+    <p><%= userinfo.address %></p>
+    <p><%- userinfo.address %></p>
+    <h3>遍历循环</h3>
+    <ul>
+        <% for (let i=0;i<list.length;i++) { %>
+            <li><%= list[i] %></li>
+        <% } %>
+    </ul>
+    <ul>
+        <% for (let i=0;i<news.length;i++) { %>
+            <li><%= news[i].title %></li>
+        <% } %>
+    </ul>
+
+
+    <%- include('footer.html') %>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>我是首页</title>
+        <link rel="stylesheet" href="css/base.css">
+    </head>
+    <body>
+        {{ include './header.html' }}
+        <h2>我是首页</h2>
+        {{ if username }}
+            <h2>{{ username }}</h2>
+        {{ /if }}
+        {{ include './footer.html' }}
+    </body>
+</html>

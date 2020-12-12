@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>首页</title>
+    <link rel="stylesheet" href="css/base.css">
+</head>
+
+<body>
+    <%- include('./header.html') %>
+    <h2>首页</h2>
+    <ul>
+        <li><%= userinfo.name %></li>
+        <li><%= userinfo.age %></li>
+        <li><%= userinfo.sex %></li>
+    </ul>
+    <%- include('./footer.html') %>
+</body>
+
+</html>

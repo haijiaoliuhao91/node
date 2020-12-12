@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>新闻页面</title>
+        <link rel="stylesheet" href="css/base.css">
+        <script type="text/javascript">
+            console.log(document.cookie)
+        </script>
+    </head>
+    <body>
+        {{ include './header.html' }}
+        <h2>新闻页面</h2>
+        {{ if username }}
+        <h2>{{ username }}</h2>
+        {{ /if }}
+        {{ if age }}
+        <h2>{{ age }}</h2>
+        {{ /if }}
+        {{ if sex }}
+        <h2>{{ sex }}</h2>
+        {{ /if }}
+        {{ include './footer.html' }}
+    </body>
+</html>

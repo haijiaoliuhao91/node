@@ -1,0 +1,15 @@
+h2 {
+    color: red;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+h3 {
+    color: blue;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+textarea {
+    resize: none;
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>登录</title>
+    <link rel="stylesheet" href="/css/base.css">
+</head>
+
+<body>
+    <%- include('../../common/header.html') %>
+    <h2>登录界面</h2>
+    <form action="/admin/login/doLogin" method="post">
+        <p><label>用户名：<input type="text" name="username" placeholder="请输入用户名" /></label></p>
+        <p><label>密码：<input type="password" name="password" placeholde="请输入密码" /></label></p>
+        <p><input type="submit" value="提交" /></p>
+    </form>
+    <%- include('../../common/footer.html') %>
+</body>
+
+</html>

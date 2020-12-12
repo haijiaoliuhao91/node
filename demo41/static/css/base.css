@@ -1,0 +1,47 @@
+h2 {
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+h3 {
+    color: blue;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    caption-side: top;
+    text-align: center;
+}
+
+table caption {
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+    height: 40px;
+    line-height: 40px;
+}
+
+table tr th {
+    color: red;
+    font-size: 16px;
+}
+
+table td {
+    color: cadetblue;
+}
+
+a:hover {
+    color: rebeccapurple;
+}
+
+a:link, a:visited {
+    color: green;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="ustf-8">
+    <title>首页</title>
+    <link rel="stylesheet" href="css/base.css">
+</head>
+
+<body>
+    <%- include('./header.html') %>
+    <h2>我是首页</h2>
+    <h3><%= title %></h3>
+    <ul>
+        <% for (let i = 0; i < lists.length; i++) { %>
+        <li><%= lists[i].title %></li>
+        <% } %>
+    </ul>
+    <h3>条件判断</h3>
+    <% if (score > 60) { %>
+    <h3><%= score %>为及格</h3>
+    <% } else { %>
+    <h3><%= score %>为不及格</h3>
+    <% } %>
+
+    <% if (userinfo) { %>
+    <ul>
+        <li><%= userinfo.name %></li>
+        <li><%= userinfo.sex %></li>
+        <li><%= userinfo.age %></li>
+    </ul>
+    <% } %>
+    <h2><%= 10 + 15 %></h2>
+    <%= tip %>
+    <%- tip %>
+
+    <%- include('./footer.html') %>
+</body>
+
+</html>
