@@ -46,7 +46,7 @@ app.get('/userinfo', (req, res)=>{
 })
 
 // 设置监听
-app.listen(3031, ()=>{ console.log('app started at port 3031...') })
+app.listen(3032, ()=>{ console.log('app started at port 3031...') })
 
 /*
 1、在app.js的头上定义ejs，代码如下：
